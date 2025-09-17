@@ -1,0 +1,223 @@
+.curr-article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    margin-top: 80px;
+}
+
+h1 {
+    font-weight: 900;
+    margin-bottom: 7vh;
+    margin-top: 5vh;
+    font-family: "Avenir";
+}
+
+@media (min-width: 0px) {
+    h1 {
+        font-size: 28px;
+    }
+
+    .content,
+    .icons {
+        width: 70vw;
+    }
+
+    .recent-news {
+        display: none !important;
+    }
+
+    .recent-headers {
+        display: none !important;
+    }
+
+    p {
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 800px) {
+    h1 {
+        font-size: 40px;
+    }
+
+    .content,
+    .icons {
+        width: 50vw;
+    }
+
+    .recent-article {
+        width: 16vw;
+    }
+
+    .recent-headers {
+        display: flex !important;
+    }
+
+    .recent-news {
+        display: flex !important;
+    }
+
+    p {
+        font-size: 18px;
+    }
+
+    img {
+        width: 50vw;
+    }
+}
+
+blockquote {
+    font-size: 23px;
+    border-left: 3px solid rgb(247, 75, 75);
+    padding-left: 10px;
+    margin-bottom: 2vh;
+}
+
+p {
+    font-family: "Avenir";
+}
+
+img {
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+figcaption {
+    font-size: 14px;
+    text-align: center;
+    font-family: "Avenir";
+    color: rgb(41, 40, 40);
+}
+
+h2 {
+    font-weight: bold;
+    font-size: 20px;
+    font-family: "Avenir";
+    margin-top: 3vh;
+    margin-bottom: 2vh;
+}
+
+.date {
+    font-size: 14px;
+}
+
+.icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    gap: 30px;
+    padding: 15px;
+    border-top: 1px solid rgb(190, 189, 189);
+    border-bottom: 1px solid rgb(190, 189, 189);
+    margin-bottom: 30px;
+}
+
+.icons img {
+    width: 20px;
+    height: auto;
+}
+
+.recent-news {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 100px;
+    gap: 2vw;
+}
+
+.recent-article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.recent-article img {
+    width: 100%;
+    height: 100%;
+    max-height: 10vw;
+    object-fit: cover;
+    margin-top: 20px;
+}
+
+.recent-title {
+    font-weight: bold;
+    font-family: "Avenir";
+}
+
+.recent-headers {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.news-link:hover {
+    color: orange;
+}
+
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+}
+
+.popup-content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 30vw;
+}
+
+.popup-link {
+    overflow: scroll;
+    scrollbar-arrow-color: transparent;
+    outline: 2px solid black;
+    outline-offset: 5px;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.popup-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 2vh;
+}
+
+.popup-buttons button {
+    background-color: rgb(250, 131, 110);
+    font-family: "Avenir";
+    color: white;
+    padding: 5px 5px;
+    border-radius: 5px;
+}
+
+.popup-buttons button:hover {
+    background-color: rgb(251, 58, 24);
+}
+
+.copied {
+    font-size: 14px;
+}
